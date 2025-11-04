@@ -16,20 +16,28 @@ class UserBase(BaseModel):
 
 class UserCreate(UserBase):
     """Schema for creating a user"""
-    pass
+    role: str = Field(..., description="User role: citizen, department_user, mla_staff, admin")
+    constituency_id: UUID = Field(..., description="Constituency ID")
+    ward_id: Optional[UUID] = Field(None, description="Ward ID (optional)")
 
 
 class UserUpdate(BaseModel):
     """Schema for updating a user"""
     name: Optional[str] = Field(None, min_length=1, max_length=255)
     locale_pref: Optional[str] = Field(None, pattern=r'^(en|kn)$')
+    profile_photo: Optional[str] = Field(None, max_length=500)
+    constituency_id: Optional[UUID] = Field(None, description="Constituency ID")
+    ward_id: Optional[UUID] = Field(None, description="Ward ID")
 
 
 class UserResponse(UserBase):
     """Schema for user response"""
     id: UUID
     role: str
-    is_active: str
+    constituency_id: Optional[UUID] = None
+    ward_id: Optional[UUID] = None
+    is_active: bool
+    profile_photo: Optional[str] = None
     created_at: datetime
     updated_at: datetime
     

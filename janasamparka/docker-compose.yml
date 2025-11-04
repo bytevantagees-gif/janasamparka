@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # PostgreSQL database with PostGIS
   db:
@@ -10,7 +8,7 @@ services:
       POSTGRES_PASSWORD: janasamparka123
       POSTGRES_DB: janasamparka_db
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
@@ -25,17 +23,40 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     container_name: janasamparka_backend
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     volumes:
       - ./backend:/app
     ports:
       - "8000:8000"
     environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_USER=janasamparka
+      - POSTGRES_PASSWORD=janasamparka123
+      - POSTGRES_DB=janasamparka_db
       - DATABASE_URL=postgresql://janasamparka:janasamparka123@db:5432/janasamparka_db
       - DEBUG=True
+      - PYTHONUNBUFFERED=1
     depends_on:
       db:
         condition: service_healthy
+    restart: unless-stopped
+
+  # React frontend
+  frontend:
+    build:
+      context: ./admin-dashboard
+      dockerfile: Dockerfile
+    container_name: janasamparka_frontend
+    volumes:
+      - ./admin-dashboard:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - DOCKER_ENV=true
+      - VITE_API_BASE_URL=http://localhost:8000
+      - VITE_MAPBOX_TOKEN=${VITE_MAPBOX_TOKEN:-}
+    depends_on:
+      - backend
     restart: unless-stopped
 
 volumes:

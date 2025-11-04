@@ -1,0 +1,230 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Janasamparka Overview",
+    "tags": ["janasamparka"],
+    "timezone": "Asia/Kolkata",
+    "panels": [
+      {
+        "id": 1,
+        "title": "HTTP Requests Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(janasamparka_http_requests_total[5m])",
+            "legendFormat": "{{method}} {{endpoint}}"
+          }
+        ],
+        "yAxes": [
+          {
+            "label": "Requests/sec"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": 2,
+        "title": "Response Time",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(janasamparka_http_request_duration_seconds_bucket[5m]))",
+            "legendFormat": "95th percentile"
+          },
+          {
+            "expr": "histogram_quantile(0.50, rate(janasamparka_http_request_duration_seconds_bucket[5m]))",
+            "legendFormat": "50th percentile"
+          }
+        ],
+        "yAxes": [
+          {
+            "label": "Seconds"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 0
+        }
+      },
+      {
+        "id": 3,
+        "title": "Error Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(janasamparka_http_requests_total{status_code=~\"5..\"}[5m]) / rate(janasamparka_http_requests_total[5m])",
+            "legendFormat": "5xx Errors"
+          },
+          {
+            "expr": "rate(janasamparka_http_requests_total{status_code=~\"4..\"}[5m]) / rate(janasamparkak_http_requests_total[5m])",
+            "legendFormat": "4xx Errors"
+          }
+        ],
+        "yAxes": [
+          {
+            "label": "Error Rate",
+            "max": 1,
+            "min": 0
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 8
+        }
+      },
+      {
+        "id": 4,
+        "title": "Active Users",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "count(increase(janasamparka_http_requests_total[1h]))",
+            "legendFormat": "Active Users (1h)"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 6,
+          "x": 12,
+          "y": 8
+        }
+      },
+      {
+        "id": 5,
+        "title": "Complaints Created",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "increase(janasamparka_complaints_total[1h])",
+            "legendFormat": "{{category}}"
+          }
+        ],
+        "yAxes": [
+          {
+            "label": "Complaints/Hour"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 6,
+          "x": 18,
+          "y": 8
+        }
+      },
+      {
+        "id": 6,
+        "title": "Database Performance",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(janasamparka_db_queries_total[5m])",
+            "legendFormat": "Queries/sec"
+          },
+          {
+            "expr": "histogram_quantile(0.95, rate(janasamparka_db_query_duration_seconds_bucket[5m]))",
+            "legendFormat": "95th percentile latency"
+          }
+        ],
+        "yAxes": [
+          {
+            "label": "Queries/sec"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 16
+        }
+      },
+      {
+        "id": 7,
+        "title": "System Resources",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "janasamparka_system_cpu_usage_percent",
+            "legendFormat": "CPU %"
+          },
+          {
+            "expr": "janasamparka_system_memory_usage_bytes / 1024 / 1024 / 1024",
+            "legendFormat": "Memory GB"
+          }
+        ],
+        "yAxes": [
+          {
+            "label": "Percentage / GB"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 16
+        }
+      },
+      {
+        "id": 8,
+        "title": "Authentication Events",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(janasamparka_auth_attempts_total[5m])",
+            "legendFormat": "Auth Attempts/sec"
+          },
+          {
+            "expr": "rate(janasamparka_auth_failures_total[5m])",
+            "legendFormat": "Auth Failures/sec"
+          }
+        ],
+        "yAxes": [
+          {
+            "label": "Events/sec"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 24
+        }
+      },
+      {
+        "id": 9,
+        "title": "File Uploads",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "increase(janasamparka_file_uploads_total[1h])",
+            "legendFormat": "{{file_type}}"
+          }
+        ],
+        "yAxes": [
+          {
+            "label": "Uploads/Hour"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 24
+        }
+      }
+    ],
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "refresh": "30s"
+  }
+}

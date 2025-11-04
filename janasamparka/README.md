@@ -82,7 +82,25 @@ createdb janasamparka_db
 
 # Enable PostGIS extension
 psql janasamparka_db -c "CREATE EXTENSION postgis;"
+
+# Seed constituencies and departments
+python backend/seed_data.py
+
+# Create all test users (28 users across all roles)
+python backend/create_all_test_users.py
 ```
+
+**🔑 Test Login Credentials:**
+
+See **[TEST_LOGIN_CREDENTIALS.md](TEST_LOGIN_CREDENTIALS.md)** for complete list of 28 test users including:
+- 1 System Admin
+- 3 MLAs (one per constituency)
+- 6 Moderators (two per constituency)
+- 9 Department Officers (three per constituency)
+- 3 Auditors (one per constituency)
+- 6 Citizens (two per constituency)
+
+**Quick Test Login:** Use any phone number from the credentials file with **OTP: 123456**
 
 ---
 

@@ -1,0 +1,139 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: janasamparka-backend-staging
+  namespace: janasamparka-staging
+  labels:
+    app: janasamparka-backend
+    environment: staging
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: janasamparka-backend
+      environment: staging
+  template:
+    metadata:
+      labels:
+        app: janasamparka-backend
+        environment: staging
+    spec:
+      containers:
+      - name: backend
+        image: ghcr.io/janasamparka/janasamparka/backend:develop
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: janasamparka-secrets-staging
+              key: database-url
+        - name: REDIS_URL
+          valueFrom:
+            secretKeyRef:
+              name: janasamparka-secrets-staging
+              key: redis-url
+        - name: SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: janasamparka-secrets-staging
+              key: secret-key
+        - name: ENVIRONMENT
+          value: "staging"
+        - name: DEBUG
+          value: "true"
+        - name: SENTRY_DSN
+          valueFrom:
+            secretKeyRef:
+              name: janasamparka-secrets-staging
+              key: sentry-dsn
+        - name: FIREBASE_CREDENTIALS_PATH
+          value: "/etc/firebase/credentials.json"
+        volumeMounts:
+        - name: firebase-credentials
+          mountPath: /etc/firebase
+          readOnly: true
+        - name: uploads
+          mountPath: /app/uploads
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+      volumes:
+      - name: firebase-credentials
+        secret:
+          secretName: firebase-credentials-staging
+      - name: uploads
+        persistentVolumeClaim:
+          claimName: janasamparka-uploads-staging
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: janasamparka-backend-service-staging
+  namespace: janasamparka-staging
+spec:
+  selector:
+    app: janasamparka-backend
+    environment: staging
+  ports:
+  - protocol: TCP
+    port: 8000
+    targetPort: 8000
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: janasamparka-backend-ingress-staging
+  namespace: janasamparka-staging
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-staging
+    nginx.ingress.kubernetes.io/rate-limit: "100"
+    nginx.ingress.kubernetes.io/rate-limit-window: "1m"
+spec:
+  tls:
+  - hosts:
+    - staging-api.janasamparka.karnataka.gov.in
+    secretName: janasamparka-backend-tls-staging
+  rules:
+  - host: staging-api.janasamparka.karnataka.gov.in
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: janasamparka-backend-service-staging
+            port:
+              number: 8000
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: janasamparka-uploads-staging
+  namespace: janasamparka-staging
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: standard
