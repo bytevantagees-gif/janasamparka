@@ -161,15 +161,17 @@ function Layout({ children }) {
       <div className="fixed inset-y-0 left-0 w-64 bg-slate-900 text-slate-100 shadow-2xl shadow-slate-900/40">
         <div className="flex h-full flex-col">
           {/* Logo */}
-          <div className="flex h-20 items-center justify-between border-b border-white/10 px-6">
-            <div className="flex items-center gap-3">
-              <img src={emblem} alt="Government of Karnataka" className="h-10 w-10 drop-shadow-lg" />
-              <div className="leading-relaxed pt-1">
-                <p className="text-sm tracking-wide text-sky-200 pt-1">{t('governmentOfKarnataka')}</p>
-                <h1 className="text-xl font-semibold text-white">{t('janasamparkaCcommand')}</h1>
+          <div className="flex items-start justify-between gap-3 border-b border-white/10 px-5 py-4">
+            <div className="flex items-start gap-3">
+              <img src={emblem} alt="Government of Karnataka" className="h-10 w-10 shrink-0 drop-shadow-lg" />
+              <div className="flex flex-col space-y-1 leading-snug text-left">
+                <p className="text-xs uppercase tracking-wide text-sky-200">{t('governmentOfKarnataka')}</p>
+                <h1 className="text-sm font-semibold text-white leading-snug break-words max-w-[10.5rem]">
+                  {t('janasamparkaCcommand')}
+                </h1>
               </div>
             </div>
-            <Sparkles className="h-5 w-5 text-sky-300 animate-pulse" />
+            <Sparkles className="mt-1 h-5 w-5 text-sky-300 animate-pulse" />
           </div>
 
           {/* Navigation */}
