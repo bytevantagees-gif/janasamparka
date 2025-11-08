@@ -2,8 +2,8 @@ export const translations = {
   en: {
     // Header & Navigation
     governmentOfKarnataka: 'Govt. of Karnataka',
-    janasamparka: 'Janasamparka',
-    janasamparkaCcommand: 'Janasamparka Command',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ Command Center | JanaMana Samparka Command Center',
     missionControl: 'Mission Control',
     smartGovernanceHub: 'Smart Governance Hub',
     constellationSync: 'Constellation Sync Active',
@@ -306,8 +306,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',
@@ -611,8 +611,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',
@@ -916,8 +916,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',
@@ -1221,8 +1221,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',
@@ -1526,8 +1526,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',
@@ -1831,8 +1831,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',

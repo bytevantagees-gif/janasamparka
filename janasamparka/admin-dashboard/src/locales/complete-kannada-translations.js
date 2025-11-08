@@ -1,9 +1,9 @@
-// Complete Kannada translations for Janasamparka
+// Complete Kannada translations for ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka
 export const kannadaTranslations = {
   // Header & Navigation
   governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-  janasamparka: 'ಜನಸಂಪರ್ಕ',
-  janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+  janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+  janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
   missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
   smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
   constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',

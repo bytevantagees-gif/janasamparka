@@ -2,8 +2,8 @@ export const translations = {
   en: {
     // Header & Navigation
     governmentOfKarnataka: 'Govt. of Karnataka',
-    janasamparka: 'Janasamparka',
-    janasamparkaCcommand: 'Janasamparka Command',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ Command Center | JanaMana Samparka Command Center',
     missionControl: 'Mission Control',
     smartGovernanceHub: 'Smart Governance Hub',
     constellationSync: 'Constellation Sync Active',
@@ -433,8 +433,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',
@@ -757,8 +757,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',
@@ -1068,8 +1068,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',
@@ -1379,8 +1379,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',
@@ -1690,8 +1690,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',
@@ -2001,8 +2001,8 @@ export const translations = {
   kn: {
     // Header & Navigation
     governmentOfKarnataka: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ',
-    janasamparka: 'ಜನಸಂಪರ್ಕ',
-    janasamparkaCcommand: 'ಜನಸಂಪರ್ಕ ಕಮಾಂಡ್',
+    janasamparka: 'ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka',
+    janasamparkaCcommand: 'ಜನಮನಾ ಸಂಪರ್ಕ ಕಮಾಂಡ್ ಕೇಂದ್ರ | JanaMana Samparka Command Center',
     missionControl: 'ಮಿಷನ್ ಕಂಟ್ರೋಲ್',
     smartGovernanceHub: 'ಸ್ಮಾರ್ಟ್ ಆಡಳಿತ ಕೇಂದ್ರ',
     constellationSync: 'ಸಮನ್ವಯ ಸಕ್ರಿಯ',
@@ -2658,6 +2658,51 @@ export const translations = {
     bytevantageEnterpriseSolutions: 'ಬೈಟ್‌ವ್ಯಾಂಟೇಜ್ ಎಂಟರ್‌ಪ್ರೈಜ್ ಸಲ್ಯೂಶನ್ಸ್',
     mangalore: 'ಮಂಗಳೂರು',
     allRightsReserved: 'ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ',
+    
+    // Missing Votebank & Youth Engagement translations
+    agriculture: 'ಕೃಷಿ',
+    retail: 'ಚಿಲ್ಲರೆ',
+    services: 'ಸೇವೆಗಳು',
+    size: 'ಗಾತ್ರ',
+    empower_youth_with_education_and_opportunities: 'ಶಿಕ್ಷಣ ಮತ್ತು ಅವಕಾಶಗಳೊಂದಿಗೆ ಯುವಕರನ್ನು ಸಬಲೀಕರಿಸಿ',
+    add_youth: 'ಯುವಕರನ್ನು ಸೇರಿಸಿ',
+    total_youth: 'ಒಟ್ಟು ಯುವಕರು',
+    active_programs: 'ಸಕ್ರಿಯ ಕಾರ್ಯಕ್ರಮಗಳು',
+    graduates: 'ಪದವೀಧರರು',
+    job_seekers: 'ಉದ್ಯೋಗ ಹುಡುಕುವವರು',
+    youth_profiles: 'ಯುವ ಪ್ರೊಫೈಲ್‌ಗಳು',
+    programs: 'ಕಾರ್ಯಕ್ರಮಗಳು',
+    search_youth: 'ಯುವಕರನ್ನು ಹುಡುಕಿ',
+    all_levels: 'ಎಲ್ಲಾ ಹಂತಗಳು',
+    field: 'ಕ್ಷೇತ್ರ',
+    skills: 'ಕೌಶಲ್ಯಗಳು',
+    graduate: 'ಪದವೀಧರ',
+    post_graduate: 'ಸ್ನಾತಕೋತ್ತರ',
+    under_graduate: 'ಪದವಿಪೂರ್ವ',
+    youth_programs: 'ಯುವ ಕಾರ್ಯಕ್ರಮಗಳು',
+    program_name: 'ಕಾರ್ಯಕ್ರಮದ ಹೆಸರು',
+    type: 'ಪ್ರಕಾರ',
+    start_date: 'ಪ್ರಾರಂಭ ದಿನಾಂಕ',
+    end_date: 'ಅಂತಿಮ ದಿನಾಂಕ',
+    participants: 'ಭಾಗವಹಿಸುವವರು',
+    program_type: 'ಕಾರ್ಯಕ್ರಮದ ಪ್ರಕಾರ',
+    trainer: 'ತರಬೇತುದಾರ',
+    duration: 'ಅವಧಿ',
+    dates: 'ದಿನಾಂಕಗಳು',
+    enrollment: 'ದಾಖಲಾತಿ',
+    all_status: 'ಎಲ್ಲಾ ಸ್ಥಿತಿ',
+    upcoming: 'ಮುಂಬರುವ',
+    manage_skill_development_and_training: 'ಕೌಶಲ್ಯ ಅಭಿವೃದ್ಧಿ ಮತ್ತು ತರಬೇತಿಯನ್ನು ನಿರ್ವಹಿಸಿ',
+    create_program: 'ಕಾರ್ಯಕ್ರಮ ರಚಿಸಿ',
+    total_programs: 'ಒಟ್ಟು ಕಾರ್ಯಕ್ರಮಗಳು',
+    total_trainees: 'ಒಟ್ಟು ತರಬೇತಿ ಪಡೆಯುವವರು',
+    enrollments: 'ದಾಖಲಾತಿಗಳು',
+    search_programs: 'ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ಹುಡುಕಿ',
+    trainee_enrollments: 'ತರಬೇತಿ ದಾಖಲಾತಿಗಳು',
+    participant: 'ಭಾಗವಹಿಸುವವರು',
+    enrollment_date: 'ದಾಖಲಾತಿ ದಿನಾಂಕ',
+    progress: 'ಪ್ರಗತಿ',
+    operationalPerformance: 'ಕಾರ್ಯಾಚರಣಾ ಕಾರ್ಯಕ್ಷಮತೆ',
   }
 };
 

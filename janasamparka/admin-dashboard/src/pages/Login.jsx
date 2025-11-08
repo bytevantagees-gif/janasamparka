@@ -143,8 +143,8 @@ function Login() {
               className="h-24 w-24 drop-shadow-lg animate-pulse"
             />
           </div>
-          <h1 className="text-4xl font-bold text-primary-700 mb-2">ಜನಸಂಪರ್ಕ</h1>
-          <p className="text-gray-600 text-lg">Jana Samparka - MLA Connect</p>
+          <h1 className="text-4xl font-bold text-primary-700 mb-2">ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka</h1>
+          <p className="text-gray-600 text-lg">Connecting People's Minds – Every voice heard, every corner connected.</p>
           <p className="text-gray-500 text-sm">Government of Karnataka</p>
         </div>
 
