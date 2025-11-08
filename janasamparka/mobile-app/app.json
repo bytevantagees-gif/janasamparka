@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "Janasamparka",
-    "slug": "janasamparka-mobile",
+    "name": "ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka",
+    "slug": "janamana-samparka",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "scheme": "janasamparka",
+    "scheme": "janamana-samparka",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -14,7 +14,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.janasamparka.mobile",
+      "bundleIdentifier": "com.janamanasamparka.mobile",
       "infoPlist": {
         "NSCameraUsageDescription": "This app uses the camera to capture photos of complaints.",
         "NSLocationWhenInUseUsageDescription": "This app uses your location to tag complaints with GPS coordinates.",
@@ -26,7 +26,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#3B82F6"
       },
-      "package": "com.janasamparka.mobile",
+      "package": "com.janamanasamparka.mobile",
       "permissions": [
         "CAMERA",
         "ACCESS_FINE_LOCATION",
@@ -49,14 +49,14 @@
       [
         "expo-location",
         {
-          "locationAlwaysAndWhenInUsePermission": "Allow Janasamparka to use your location to tag complaints."
+          "locationAlwaysAndWhenInUsePermission": "Allow JanaMana Samparka to use your location to tag complaints."
         }
       ],
       [
         "expo-image-picker",
         {
-          "photosPermission": "Allow Janasamparka to access your photos to upload complaint images.",
-          "cameraPermission": "Allow Janasamparka to access your camera to take photos of complaints."
+          "photosPermission": "Allow JanaMana Samparka to access your photos to upload complaint images.",
+          "cameraPermission": "Allow JanaMana Samparka to access your camera to take photos of complaints."
         }
       ]
     ],

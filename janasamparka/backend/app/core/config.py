@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     """Base application settings"""
     
     # Application
-    APP_NAME: str = "Janasamparka API"
+    APP_NAME: str = "ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka API"
     APP_VERSION: str = "1.0.0"
     ENVIRONMENT: str = get_environment()
     DEBUG: bool = True

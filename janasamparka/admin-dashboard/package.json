@@ -1,9 +1,9 @@
 {
-  "name": "janasamparka-admin",
+  "name": "janamana-samparka-admin",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Admin Dashboard for Janasamparka MLA Connect App",
+  "description": "Admin Dashboard for ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka – Connecting People's Minds",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

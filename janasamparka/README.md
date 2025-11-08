@@ -1,8 +1,17 @@
-# 🏛️ Janasamparka (ಜನಸಂಪರ್ಕ) - MLA Connect App
+# 🏛️ ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka – Connecting People's Minds
 
 **Bilingual Smart Constituency Governance Platform**
 
-Connecting citizens, MLAs, and government departments for faster grievance resolution, data-driven governance, and transparent rural development.
+## 🎯 Vision Statement
+*"Every citizen's voice deserves to be heard, and every MLA deserves to know what's happening in every corner of his constituency — instantly."*
+
+**ಜನಮನಾ ಸಂಪರ್ಕ (JanaMana Samparka)** is a bilingual (Kannada + English) citizen engagement and governance platform — designed specifically for MLAs in Karnataka to manage:
+- Citizen grievances
+- Departmental coordination
+- Real-time constituency updates
+- Transparent progress reporting
+
+It combines **mobile simplicity** for citizens and **powerful analytics** for MLAs.
 
 ---
 
@@ -346,4 +355,5 @@ MIT License
 - Puttur Constituency, Karnataka
 
 **Version:** 1.0.0-alpha  
-**Last Updated:** October 2025
+**Last Updated:** November 2025  
+**Built with ❤️ for Karnataka's MLAs and Citizens**

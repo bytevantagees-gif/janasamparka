@@ -1,6 +1,8 @@
-# 🎨 Janasamparka Admin Dashboard
+# 🎨 ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka Admin Dashboard
 
-React-based admin dashboard for managing constituencies, MLAs, and complaints.
+React-based admin dashboard for managing constituencies, MLAs, and citizen grievances.
+
+**"Connecting People's Minds – Every voice heard, every corner connected."**
 
 ## 🚀 Quick Start
 
@@ -438,5 +440,6 @@ server {
 ---
 
 **Version:** 1.0.0-alpha  
-**Last Updated:** October 2025  
-**Built with ❤️ for Janasamparka**
+**Last Updated:** November 2025  
+**Built with ❤️ for Karnataka's MLAs and Citizens**  
+**ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka – Connecting People's Minds**

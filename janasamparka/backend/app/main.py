@@ -28,7 +28,7 @@ from pathlib import Path
 async def lifespan(app: FastAPI):
     """Application lifespan events"""
     # Startup
-    logger.info("Starting Janasamparka API", version=settings.APP_VERSION)
+    logger.info("Starting ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka API", version=settings.APP_VERSION)
     
     # Setup logging
     setup_logging()
@@ -49,7 +49,7 @@ async def lifespan(app: FastAPI):
     yield
     
     # Shutdown
-    logger.info("Shutting down Janasamparka API")
+    logger.info("Shutting down ಜನಮನಾ ಸಂಪರ್ಕ | JanaMana Samparka API")
 
 
 # Initialize FastAPI app
